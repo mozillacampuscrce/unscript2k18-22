@@ -1,0 +1,169 @@
+.cld-main{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.cld-main a{
+  color: #333;
+  font-weight: bold;
+}
+
+body{
+  color: #204040;
+  background: #080532;
+
+  font-family:"Century Gothic";
+  text-transform:uppercase;
+  font-size: 20px;
+}
+#caleandar{
+
+  background-image: -webkit-linear-gradient(top, #f5f8fb, #e9edf3);
+  background-image: -moz-linear-gradient(top, #f5f8fb, #e9edf3);
+  background-image: -o-linear-gradient(top, #f5f8fb, #e9edf3);
+  background-image: linear-gradient(to bottom, #f5f8fb, #e9edf3);
+  -webkit-box-shadow: inset 0 1px white;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  box-shadow: inset 0 1px white;
+  height: 75%;
+  width:79%;
+  position:relative;
+  padding-bottom:15px;
+  padding-top: 40px;
+  top:30px;
+  margin-left: 1%;
+}
+
+#caleandar1{
+
+  background-image: -webkit-linear-gradient(top, #f5f8fb, #e9edf3);
+  background-image: -moz-linear-gradient(top, #f5f8fb, #e9edf3);
+  background-image: -o-linear-gradient(top, #f5f8fb, #e9edf3);
+  background-image: linear-gradient(to bottom, #f5f8fb, #e9edf3);
+  -webkit-box-shadow: inset 0 1px white;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  box-shadow: inset 0 1px white;
+  height: 82%;
+  width:18%;
+  margin-top: 0px;
+  float: right;
+  position:absolute;
+  padding-bottom:15px;
+  margin-left: 81%;
+  padding-top: 40px;
+  top:30px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+
+  .cld-datetime{
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+  }
+  .cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .cld-nav:hover{
+    cursor: pointer;
+  }
+  .cld-nav:hover svg{
+      fill: #666;
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+    .cld-nav svg:hover{
+
+    }
+.cld-labels, .cld-days{
+  padding-left: 0;
+}
+  .cld-label, .cld-day{
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+  }
+  .cld-day.today .cld-number{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #666;
+    color: #fff;
+  }
+  .cld-day.disableDay{
+    opacity: 0.5;
+  }
+  .cld-day.nextMonth, .cld-day.prevMonth{
+    opacity: 0.33;
+  }
+    .cld-number{
+      position: relative;
+      margin: 5px;
+      padding: 5px;
+    }
+      .cld-title{
+        position: absolute;
+        z-index: 5;
+        display: none;
+        top: 30px;
+        left: 0;
+        padding: 5px 10px;
+        background: #fff;
+        white-space: nowrap;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      .cld-number:hover .cld-title{
+        display: block;
+      }
+      .cld-title::before{
+        content: '';
+        position: absolute;
+        top: -7.5px; left: 7.5px;
+        width: 0;
+        height: 0;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+
+        border-bottom: 7.5px solid #ccc;
+      }
+      .cld-number.eventday{
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        border: 1px solid #999;
+      }
+      .cld-number.eventday:hover{
+        cursor: pointer;
+        background: #eee;
+      }
+      .today .cld-number.eventday:hover{
+        background: #888;
+      }

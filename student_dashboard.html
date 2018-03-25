@@ -1,0 +1,88 @@
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<!-- CALENDAR -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/theme1.css"/>
+
+</head>
+<body>
+<!-- Uses a header that contracts as the page scrolls down. -->
+<style>
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+</style>
+
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">Dashboard
+        <span class = "page-title-span"> | </span>
+        <span class = "page-title-span"> Student </span>
+      </span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <!-- Accent-colored raised button with ripple -->
+<button id="signOutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+Log out<i class=" button-right-icon material-icons">account_box</i>
+</button>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="personal_details.html">Personal Details</a>
+      <a class="mdl-navigation__link" href="">Events Registered</a>
+      <a class="mdl-navigation__link" href="">Updates</a>
+      <a class="mdl-navigation__link" href="resume.html">Resume</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+		<div id="caleandar"> </div>
+    <div id="caleandar1"><h3 id="namedisp">Event name</h3>
+    <h4 id="desdisp">Description</h4> </div>
+	</div>
+
+	</div>
+
+  </main>
+
+
+	 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9EAIKo5ZOEctPY5Q9SE8r4edZIUMlruY",
+    authDomain: "fir-web-learn-bbc03.firebaseapp.com",
+    databaseURL: "https://fir-web-learn-bbc03.firebaseio.com",
+    projectId: "fir-web-learn-bbc03",
+    storageBucket: "fir-web-learn-bbc03.appspot.com",
+    messagingSenderId: "383746059927"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index_event.js"></script>
+ <script type="text/javascript" src="js/caleandar.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style_eventform.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css' rel="stylesheet">
+</head>
+<body>
+
+<div class="testbox">
+  <h1>Registration</h1>
+
+  <form name='event' action="">
+      <hr>
+    <div class="accounttype">
+      <input type="radio" value="None" id="radioOne" name="account" checked/>
+      <label for="radioOne" class="radio" >Council</label>
+      <input type="radio" value="None" id="radioTwo" name="account" />
+      <label for="radioTwo" class="radio">Placement</label>
+    </div>
+  <hr>
+  <label id="icon" for="name"><i class="icon-user "></i></label>
+    <input type="text" name="name" id="name" placeholder="Name" required><br><br>
+
+
+
+
+        <textarea name="text" id="texta" class="validate[required,length[6,300]] feedback-input"  placeholder="Comment"></textarea>
+
+<i class="fas fa-calendar-alt"></i><input type="date" name="dmy" class="date" id="dte" required><br>
+
+
+
+  <a href="#" id="loginBtn" class="button" >Register</a>
+  </form>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9EAIKo5ZOEctPY5Q9SE8r4edZIUMlruY",
+    authDomain: "fir-web-learn-bbc03.firebaseapp.com",
+    databaseURL: "https://fir-web-learn-bbc03.firebaseio.com",
+    projectId: "fir-web-learn-bbc03",
+    storageBucket: "fir-web-learn-bbc03.appspot.com",
+    messagingSenderId: "383746059927"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="event_form.js"></script>
+
+
+</body>
+</html>

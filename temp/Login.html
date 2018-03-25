@@ -1,0 +1,103 @@
+<!Doctype html>
+<html>
+<head>
+  <title> Firebase Web Basics</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_green.min.css" />
+ <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+<link rel = "stylesheet" href="style_login.css"/>
+
+</head>
+<body>
+
+
+  <dialog id="loginDialog" class="mdl-dialog">
+      <h4 class="mdl-dialog__title">LogIn</h4>
+      <div class="mdl-dialog__content">
+        <p id="loginError"></p>
+        <!-- Accent-colored raised button with ripple -->
+        <!-- radio button-->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+          <span class="mdl-radio__label">Student</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+          <span class="mdl-radio__label">Council/Placement</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+          <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+          <span class="mdl-radio__label">Admin</span>
+        </label>
+      </br>
+        <!-- radio button-->
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="loginEmail">
+    <label class="mdl-textfield__label" for="sample3">Email ...</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+<input class="mdl-textfield__input" type="text" id="loginPassword">
+<label class="mdl-textfield__label" for="sample3">Password ...</label>
+</div>
+      </div>
+      <div class="mdl-dialog__actions">
+        <button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          Login
+        </button>
+        <div id="loginProgress" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+
+      </div>
+ </dialog>
+
+
+<div class ="login-cover">
+  <!-- MDL Spinner Component with Single Color -->
+  <div class="page-loader mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+</div>
+
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Hackathon
+          <span class = "page-title-span"> | </span>
+          <span class = "page-title-span"> Home </span>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <!-- Accent-colored raised button with ripple -->
+<button id="signOutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Log out <i class=" button-right-icon material-icons">account_box</i>
+</button>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+    </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDkbxT7jUAFxBzk9Jh-dksoh0H_3SkxgY8",
+      authDomain: "new-web-app-65a99.firebaseapp.com",
+      databaseURL: "https://new-web-app-65a99.firebaseio.com",
+      projectId: "new-web-app-65a99",
+      storageBucket: "new-web-app-65a99.appspot.com",
+      messagingSenderId: "64458190987"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src = "login.js"></script>
+
+
+</body>
+</html>

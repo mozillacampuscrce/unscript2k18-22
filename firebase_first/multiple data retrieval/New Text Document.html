@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Firebase web basics</title>
+  <!--font family -Google fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+
+
+
+
+
+<link rel = "stylesheet" href ="style.css" />
+
+</head>
+<body>
+
+  <div class = "mainDiv" align= "left">
+    <h1>All users</h1>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+    <tbody id="table_body">
+    </tbody>
+  </table>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9EAIKo5ZOEctPY5Q9SE8r4edZIUMlruY",
+    authDomain: "fir-web-learn-bbc03.firebaseapp.com",
+    databaseURL: "https://fir-web-learn-bbc03.firebaseio.com",
+    projectId: "fir-web-learn-bbc03",
+    storageBucket: "fir-web-learn-bbc03.appspot.com",
+    messagingSenderId: "383746059927"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>

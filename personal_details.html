@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+<head>
+<link rel ="stylesheet" href="style_personal.css">
+
+</head>
+
+<body>
+
+
+<aside class="profile-card">
+  <header>
+   <!-- the username --><br>
+    <h1 id="Name"></h1>
+
+    <!-- and role or location -->
+    <br>
+    <br>
+    <h2 >Branch
+
+          </h2><br>
+    <h2>CGPA
+
+          </h2>
+
+
+  </header>
+
+  <!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+    <h3> Father Agnel Technical Complex</h3>
+    <h3 id ="Branch"> Production </h3>
+    <h3 id="Gpa"> 7.0 </h3>
+
+
+  </div>
+
+
+</aside>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDkbxT7jUAFxBzk9Jh-dksoh0H_3SkxgY8",
+    authDomain: "new-web-app-65a99.firebaseapp.com",
+    databaseURL: "https://new-web-app-65a99.firebaseio.com",
+    projectId: "new-web-app-65a99",
+    storageBucket: "new-web-app-65a99.appspot.com",
+    messagingSenderId: "64458190987"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src = "personal.js"></script>
+
+</body>
+</html>
